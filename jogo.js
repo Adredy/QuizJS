@@ -18,7 +18,7 @@ var resposta;
 var cont=0;
 
 for(i=0; i<10; i++){
-    let ramd = Math.floor(Math.random()*148);
+    let ramd = Math.floor(Math.random()*147);
     tenCores.push(cores[ramd]);
     cores.splice(ramd,1);
 }
@@ -41,4 +41,5 @@ do{
 
 window.alert("Parabéns, você acertou!\nTentativas: "+cont);
 
-document.body.style.backgroundColor=resposta;
+document.body.style.backgroundColor = resposta;
+document.getElementById("nome").innerText = resposta;
